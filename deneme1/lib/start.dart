@@ -11,6 +11,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Timer(
+        Duration(seconds: 5),
+            () =>
+            Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (BuildContext context) => NotesPage())));
+
+
     return Scaffold(
       backgroundColor: Colors.blueGrey[800],
       body: Center(
